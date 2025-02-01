@@ -1,1 +1,1 @@
-https://github.com/gothelph/kassi-spring-practice
+https://github.com/gothelph/kassi-spring-practice.github.io
