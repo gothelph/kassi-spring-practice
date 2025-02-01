@@ -387,7 +387,10 @@
   box-shadow: 0 0 10px 1px #000000;
 }
 
-@media (width <= 360px) {
+@media (width <= 500px) {
+  body {
+    width: 100%;
+  }
   .header {
     display: flex;
     flex-direction: column;
