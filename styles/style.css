@@ -460,6 +460,7 @@
   }
   .card {
     background-repeat: no-repeat;
+    height: 100vh;
   }
   .card_container {
     display: flex;
@@ -472,6 +473,19 @@
     padding-right: 0%;
     padding-inline: 2%;
   }
+
+  .card_type_kimono {
+    background-size: cover;
+  }
+
+  .card_type_bomber {
+    background-size: cover;
+  }
+
+  .card_type_shopper {
+    background-size: cover;
+  }
+
   .card_container__text {
     padding-inline: 10%;
     font-size: 30px;
