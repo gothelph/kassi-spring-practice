@@ -432,6 +432,13 @@
   .cover__description {
     flex-direction: column;
   }
+
+  .card__text {
+    height: 80%;
+    align-self: center;
+    justify-self: center;
+  }
+
   .lots {
     text-align: center;
   }
