@@ -1,0 +1,504 @@
+.header {
+  padding: 94px 50px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 2fr;
+  align-items: center;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  text-transform: lowercase;
+  gap: 0.9rem;
+}
+
+.links-list {
+  list-style-type: circle;
+  display: flex;
+  gap: 32px;
+}
+
+.links-list-item {
+  text-decoration: none;
+}
+
+.links-list-item_no-bullit {
+  list-style-type: none;
+}
+
+.links-list-item_active {
+  text-decoration: none;
+}
+
+.header__logo {
+  height: 105px;
+}
+
+.header__logo-image {
+  height: 100%;
+}
+
+.header__address {
+  justify-self: right;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  font-size: 18px;
+  line-height: 24.5px;
+  gap: 2px;
+  font-style: normal;
+}
+
+.section {
+  margin-bottom: 180px;
+  display: flex;
+}
+
+.cover {
+  position: relative;
+  width: 100%;
+  min-height: 757px;
+  background-image: url("../images/wall.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  opacity: 60%;
+}
+
+.cover__container {
+  padding: 50px;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  position: relative;
+}
+
+.cover__container__title {
+  margin-top: 116px;
+}
+
+.cover__title {
+  text-transform: uppercase;
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 100px;
+  letter-spacing: 0.3em;
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.letter-spacing-none {
+  letter-spacing: 0;
+}
+
+.aligned-text {
+  line-height: 115px;
+}
+
+.aligned-text_center {
+  text-align: center;
+}
+
+.aligned-text_right {
+  text-align: right;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 0.6em;
+}
+
+.cover__description {
+  width: 100%;
+  padding-top: 135px;
+  display: flex;
+  color: white;
+  align-items: center;
+  justify-content: right;
+  gap: 80px;
+}
+
+.cover__description-text {
+  display: flex;
+  text-transform: uppercase;
+  word-spacing: 1rem;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.bet-button {
+  padding: 11px 31px;
+  background: none;
+  color: white;
+  border: 1px solid white;
+  font-size: 22px;
+  text-transform: uppercase;
+  font-family: Raleway, sans-serif;
+}
+
+.lots {
+  width: 100%;
+  padding: 0 24px;
+}
+
+.lots__heading {
+  padding: 0 0 27px 40px;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.lots__card-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.lots__card-list-item {
+  position: relative;
+  width: 334px;
+  min-height: 563px;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.card_type_kimono {
+  background-image: url("../images/kimono.jpg");
+  background-size: 170%;
+  transition: background-size 1s;
+}
+.card_type_bomber {
+  background-image: url("../images/bomber.jpg");
+  background-size: 170%;
+  transition: background-size 1s;
+}
+
+.card_type_shopper {
+  background-image: url("../images/shopper.jpg");
+  background-size: 170%;
+  transition: background-size 1s;
+}
+
+.card__title {
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.card__text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px 40px;
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: bold;
+  text-shadow: black 1px 0px 10px;
+  text-transform: uppercase;
+}
+
+.lots__look-more-link {
+  padding: 30px 0 0 40px;
+  font-size: 20px;
+  display: block;
+  line-height: 24px;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  padding: 0 24px;
+  column-gap: 20px;
+  row-gap: 10px;
+}
+
+.about__text {
+  font-size: 20px;
+  grid-column: 2 / span 2;
+  letter-spacing: 0.2px;
+  line-height: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about__title {
+  font-size: 40px;
+  text-transform: uppercase;
+  align-self: center;
+  grid-column: span 2;
+}
+
+.about__logo {
+  justify-self: center;
+}
+
+.about__logo-image {
+  width: 240px;
+  height: 240px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.big-logo {
+  filter: invert(100%);
+}
+
+.about__logo-image img {
+  width: 148px;
+  height: 114px;
+}
+
+.footer {
+  padding: 0 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-bottom: 88px;
+  font-size: 18px;
+}
+
+.footer__menu {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+.footer__social-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-self: right;
+  gap: 50px;
+}
+
+.footer__social-icon {
+  width: 48px;
+  height: 48px;
+}
+
+.card_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(6, auto);
+}
+
+.card_container__title {
+  text-transform: uppercase;
+}
+.card_container__text {
+  font-size: 20px;
+  grid-row: span 3;
+  display: flex;
+  align-items: center;
+}
+
+.card__image {
+  grid-row: span 6;
+  padding-inline-end: 50px;
+  transition: 1s;
+}
+
+.card-button {
+  background: none;
+  color: rgb(3, 3, 3);
+  border: 1px solid rgb(0, 0, 0);
+  font-size: 22px;
+  text-transform: uppercase;
+  font-family: Raleway, sans-serif;
+  transition: 0.5s;
+}
+
+.card_price {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.pannier {
+  position: fixed;
+  justify-self: right;
+  width: 8vh;
+  height: 8vh;
+  background-color: #000000;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.pannier__image {
+  filter: invert(100%);
+  width: 6vh;
+}
+
+.card__image:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.card-button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  box-shadow: 0 0 10px 1px #000000;
+}
+
+.card_type_kimono:hover {
+  background-size: 250%;
+}
+.card_type_bomber:hover {
+  background-size: 250%;
+}
+
+.card_type_shopper:hover {
+  background-size: 250%;
+}
+
+.pannier:hover {
+  box-shadow: 0 0 10px 1px #000000;
+}
+
+@media (width <= 360px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    text-align: center;
+    height: 100vh;
+    justify-content: center;
+    padding: 0px;
+  }
+  .links-list {
+    flex-direction: column;
+    gap: 5px;
+  }
+  .cover__container {
+    text-align: center;
+  }
+  .aligned-text_right {
+    text-align: center;
+  }
+  .cover__description {
+    flex-direction: column;
+  }
+  .lots {
+    text-align: center;
+  }
+  .lots__card-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .lots__card-list-item {
+    min-height: auto;
+    width: auto;
+    height: 100vh;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 10%;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+  .card__title {
+    font-size: 100px;
+  }
+  .text {
+    font-size: 50px;
+  }
+  .card_container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+  .card__image {
+    width: 100%;
+    padding-right: 0%;
+    padding-inline: 2%;
+  }
+  .card_container__text {
+    padding-inline: 10%;
+    font-size: 30px;
+  }
+  .card-button {
+    width: 50%;
+    height: 10vh;
+  }
+  .card_container__title {
+    font-size: 10vh;
+  }
+  .card_price {
+    font-size: 6vh;
+  }
+}
+
+.pannier__section {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  gap: 5vh;
+}
+
+.pannier__container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8vh;
+  height: 30vh;
+}
+
+.pannier__card-image {
+  width: 10%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.pannier__card-image:hover {
+  transform: scale(150%);
+}
+
+.pay__container {
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.card_pannier__title::before {
+  content: "2x";
+  padding: 10px;
+  font-weight: lighter;
+}
